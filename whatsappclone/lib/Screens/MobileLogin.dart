@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
@@ -11,6 +13,7 @@ class MobileLoginScreen extends StatefulWidget {
 class _MobileLoginScreenState extends State<MobileLoginScreen> {
   final TextEditingController _phoneNumberController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  String? _phoneNumber;
 
   @override
   Widget build(BuildContext context) {
@@ -40,61 +43,33 @@ class _MobileLoginScreenState extends State<MobileLoginScreen> {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  InternationalPhoneNumberInput(
-                    onInputChanged: (PhoneNumber number) {
-                      // Handle changes in the phone number input
-                      setState(() {});
-                    },
-                    onInputValidated: (bool value) {
-                      // Validate the phone number input
-                    },
-                    selectorConfig: SelectorConfig(
-                      selectorType: PhoneInputSelectorType.BOTTOM_SHEET,
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  ...List.generate(
-                    10,
-                    (index) => Container(
-                      width: 30,
-                      height: 40,
-                      margin: EdgeInsets.symmetric(horizontal: 5),
-                      decoration: BoxDecoration(
-                        border: Border(
-                          bottom: BorderSide(
-                            color: _phoneNumberController.text.length > index
-                                ? Colors.blue
-                                : Colors.black,
-                            width: 2,
-                          ),
-                        ),
-                      ),
-                      child: Center(
-                        child: Text(
-                          _phoneNumberController.text.length > index
-                              ? _phoneNumberController.text[index]
-                              : '',
-                          style: TextStyle(fontSize: 18),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+              // Add a country code picker
+              InternationalPhoneNumberInput(
+                onInputChanged: (PhoneNumber number) {
+                  // You can handle changes in the phone number input here
+                  print(number.phoneNumber);
+                },
+                inputDecoration: InputDecoration(
+                  labelText: 'Phone Number',
+                  border: OutlineInputBorder(),
+                ),
               ),
+              SizedBox(
+                height: 10,
+              ),
+              // Add a text form field for a 10-digit mobile number
+
               SizedBox(
                 height: 20,
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Validate and process the phone number
                   if (_formKey.currentState!.validate()) {
-                    // Navigate to the next screen or perform desired action
+                    // Form is valid, you can proceed with authentication
+                    // Access the phone number using _phoneNumber
                   }
                 },
-                child: Text('Continue'),
+                child: Text('Login'),
               ),
             ],
           ),
