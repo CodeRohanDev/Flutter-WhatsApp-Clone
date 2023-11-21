@@ -62,14 +62,18 @@ class _MobileLoginScreenState extends State<MobileLoginScreen> {
               SizedBox(
                 height: 20,
               ),
-              ElevatedButton(
-                onPressed: () {
-                  if (_formKey.currentState!.validate()) {
-                    // Form is valid, you can proceed with authentication
-                    // Access the phone number using _phoneNumber
-                  }
-                },
-                child: Text('Login'),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    if (_formKey.currentState!.validate()) {
+                      // Form is valid, you can proceed with authentication
+                      // Access the phone number using _phoneNumber
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(),
+                  child: Text('Send'),
+                ),
               ),
             ],
           ),
