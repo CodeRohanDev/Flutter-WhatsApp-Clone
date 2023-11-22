@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors, unused_import
+
 import 'package:flutter/material.dart';
+import 'package:whatsappclone/Screens/Home.dart';
 import 'package:whatsappclone/Screens/SplashScreen.dart';
 import 'package:whatsappclone/Screens/otpscreen.dart';
 
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: OTPScreen(),
+      home: HomePage(),
     );
   }
 }
