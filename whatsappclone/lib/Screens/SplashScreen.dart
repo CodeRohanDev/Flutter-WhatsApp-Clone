@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:whatsappclone/Screens/Mobile.dart';
 import 'package:whatsappclone/Screens/MobileLogin.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => MobileLoginScreen()),
+        MaterialPageRoute(builder: (context) => MobileNumber()),
       );
     });
   }
