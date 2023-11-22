@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsappclone/Screens/Mobile.dart';
-import 'package:whatsappclone/Screens/MobileLogin.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
