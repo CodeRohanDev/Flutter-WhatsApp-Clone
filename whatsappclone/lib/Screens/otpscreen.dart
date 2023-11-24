@@ -107,6 +107,9 @@ class _OTPScreenState extends State<OTPScreen> {
                   ),
                 ],
               ),
+              FloatingActionButton(
+                onPressed: () {},
+              )
             ],
           ),
         ),
