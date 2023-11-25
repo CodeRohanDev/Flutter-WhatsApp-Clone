@@ -14,7 +14,9 @@ class _StatusPageState extends State<StatusPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(),
+        child: Column(
+          children: [],
+        ),
         //done nothing today
       ),
     );
