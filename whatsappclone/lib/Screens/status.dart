@@ -15,6 +15,7 @@ class _StatusPageState extends State<StatusPage> {
     return Scaffold(
       body: Center(
         child: Text("status-page"),
+        //done nothing today
       ),
     );
   }
