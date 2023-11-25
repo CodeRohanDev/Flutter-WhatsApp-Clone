@@ -20,6 +20,7 @@ class _StatusPageState extends State<StatusPage> {
               "Status",
               style: TextStyle(
                 fontSize: 20,
+                fontFamily: "Helvetica-Bold",
               ),
             ),
           ],
