@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -15,7 +15,14 @@ class _StatusPageState extends State<StatusPage> {
     return Scaffold(
       body: Center(
         child: Column(
-          children: [Text("Status")],
+          children: [
+            Text(
+              "Status",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ],
         ),
         //done nothing today
       ),
