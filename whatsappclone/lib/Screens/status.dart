@@ -19,13 +19,14 @@ class _StatusPageState extends State<StatusPage> {
             Text(
               "Status",
               style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: "Helvetica-Bold",
-                  fontWeight: FontWeight.bold),
+                fontSize: 20,
+                fontFamily: "Helvetica-Bold",
+                fontWeight: FontWeight.bold,
+              ),
             ),
+            Text("heehehe")
           ],
         ),
-        //done nothing today
       ),
     );
   }
