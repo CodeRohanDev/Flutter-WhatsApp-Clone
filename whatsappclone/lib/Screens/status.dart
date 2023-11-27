@@ -21,6 +21,7 @@ class _StatusPageState extends State<StatusPage> {
               style: TextStyle(
                 fontSize: 20,
                 fontFamily: "Helvetica-Bold",
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
