@@ -14,7 +14,10 @@ class _CommunityPageState extends State<CommunityPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Community"),
+        child: Text(
+          "Community",
+          style: TextStyle(),
+        ),
       ),
     );
   }
