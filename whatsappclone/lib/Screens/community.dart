@@ -16,7 +16,9 @@ class _CommunityPageState extends State<CommunityPage> {
       body: Center(
         child: Text(
           "Community",
-          style: TextStyle(),
+          style: TextStyle(
+            fontFamily: "Helvetica",
+          ),
         ),
       ),
     );
