@@ -19,6 +19,7 @@ class _CommunityPageState extends State<CommunityPage> {
           style: TextStyle(
             fontFamily: "Helvetica",
             fontWeight: FontWeight.bold,
+            color: Colors.white,
             fontSize: 20,
           ),
         ),
