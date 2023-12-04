@@ -14,7 +14,10 @@ class _ChatsPageState extends State<ChatsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Chats"),
+        child: Text(
+          "Chats",
+          style: TextStyle(),
+        ),
       ),
     );
   }
