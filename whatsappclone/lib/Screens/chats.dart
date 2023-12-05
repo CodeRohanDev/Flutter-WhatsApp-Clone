@@ -16,7 +16,9 @@ class _ChatsPageState extends State<ChatsPage> {
       body: Center(
         child: Text(
           "Chats",
-          style: TextStyle(),
+          style: TextStyle(
+            fontSize: 20
+          ),
         ),
       ),
     );
