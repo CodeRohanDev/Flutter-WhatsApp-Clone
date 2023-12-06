@@ -17,8 +17,8 @@ class _ChatsPageState extends State<ChatsPage> {
         child: Text(
           "Chats",
           style: TextStyle(
-            fontSize: 20
-            fontFamily: "Helvetica"
+            fontSize: 20,
+            fontFamily: "Helvetica",
           ),
         ),
       ),
