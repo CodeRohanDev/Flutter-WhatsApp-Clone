@@ -19,6 +19,7 @@ class _ChatsPageState extends State<ChatsPage> {
           style: TextStyle(
             fontSize: 20,
             fontFamily: "Helvetica",
+            color: Colors.black,
           ),
         ),
       ),
